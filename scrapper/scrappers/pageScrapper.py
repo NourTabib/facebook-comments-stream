@@ -2,6 +2,7 @@ import apify_client
 from facebook_scraper import get_posts
 
 from config.db_Connexion import dbConnection
+#Using this Scrapper speed up the process of your IP and Facebook getting banned
 class pageScrapper:
     NUM_PAGES = 5
     def __init__(self,page_id):
@@ -28,7 +29,7 @@ class pageScrapper:
         return allPosts
 
 class apifyPageScrapper:
-    key ="apify_api_5XyJijSEloWpsOW92gLChi8yLbcenq00iNoO"
+    key =""
     actor_id = 'apify/facebook-posts-scraper'
     input_data = {
     "maxRequestRetries": 10,
