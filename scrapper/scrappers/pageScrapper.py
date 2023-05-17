@@ -16,7 +16,7 @@ class pageScrapper:
         posts =get_posts(self.page_id,
                               pages = self.NUM_PAGES,
                               options={"progress": True},
-                              #cookies="C:\\Users\\Nour.Tabib\\Downloads\\kesah\\www.facebook.com_cookies.txt"
+                              #cookies=""
                         )
         self.full_posts_collection.insert_many(posts)
         for post in posts:
