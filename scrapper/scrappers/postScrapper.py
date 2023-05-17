@@ -19,7 +19,7 @@ class postScrapper:
             extra_info=True,
             timeout=60,   
             options={"comments": self.MAX_COMMENTS, "progress": True,"reactors": True },
-            cookies="C:\\Users\\Nour.Tabib\\Downloads\\kesah\\www.facebook.com_cookies.txt"
+            cookies=""
             )
         requested_post = next(generator)
         if('reactions' in requested_post):
